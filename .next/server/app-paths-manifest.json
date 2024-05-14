@@ -1,0 +1,4 @@
+{
+  "/(homes)/website-builder/page": "app/(homes)/website-builder/page.js",
+  "/(others)/signup/page": "app/(others)/signup/page.js"
+}

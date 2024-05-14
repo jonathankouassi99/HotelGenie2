@@ -1,0 +1,7 @@
+.screen-holder {
+  position: relative; /* Ensure iframe positions correctly */
+  width: 1320px; /* Width of the video */
+  height: 750px; /* Height of the video */
+  overflow: hidden; /* Ensures no overflow if adjustments are needed */
+  /* Ensure any other styles needed to maintain layout are included */
+}
