@@ -54,7 +54,7 @@ const SignUp = () => {
                 />
               </Link>
             </div>
-            <Link className="font-rubik go-back-button" href="/website-builder">
+            <Link className="font-rubik go-back-button" href="/website">
               Go to home
             </Link>
           </div>

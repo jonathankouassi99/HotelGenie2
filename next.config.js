@@ -4,7 +4,7 @@ const nextConfig = {
     return [
       {
         source: "/",
-        destination: "/website-builder",
+        destination: "/website",
       },
     ];
   },
@@ -12,7 +12,7 @@ const nextConfig = {
     return [
       {
         source: "/",
-        destination: "/website-builder",
+        destination: "/website",
         permanent: true, // This makes the redirect permanent; change to false if it should be temporary
       },
     ];
