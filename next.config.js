@@ -13,7 +13,12 @@ const nextConfig = {
       {
         source: "/",
         destination: "/website",
-        permanent: true, // This makes the redirect permanent; change to false if it should be temporary
+        permanent: true, // Change to false if it should be temporary
+      },
+      {
+        source: "/website-builder",
+        destination: "/website",
+        permanent: true, // Change to false if it should be temporary
       },
     ];
   },

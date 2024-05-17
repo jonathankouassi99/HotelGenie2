@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
@@ -11,26 +11,20 @@ const HeaderThree = () => {
 
   const changeBackground = () => {
     if (typeof window !== "undefined") {
-       if (window.scrollY >= 68) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
+      if (window.scrollY >= 68) {
+        setNavbar(true);
+      } else {
+        setNavbar(false);
+      }
     }
-    }
-   
   };
 
   useEffect(() => {
-    
-  window.addEventListener("scroll", changeBackground);
+    window.addEventListener("scroll", changeBackground);
     return () => {
       window.removeEventListener("scroll", changeBackground);
-    }
-  }, [])
-  
-
-  
-  
+    };
+  }, []);
 
   return (
     <>
@@ -43,8 +37,13 @@ const HeaderThree = () => {
       >
         <div className="d-flex align-items-center justify-content-center">
           <div className="logo">
-            <Link     href="/">
-              <Image  width="87" height="40" src="/images/logo/deski_01.svg" alt="brand logo" />
+            <Link href="/">
+              <Image
+                width="136"
+                height="34"
+                src="/images/logo/hg02.png"
+                alt="brand logo"
+              />
             </Link>
           </div>
           {/* End Logo */}
@@ -77,12 +76,12 @@ const HeaderThree = () => {
 
                       <ul className="user-login-button d-flex align-items-center justify-content-center">
                         <li>
-                          <Link     href="/login" className="signIn-action">
+                          <Link href="/login" className="signIn-action">
                             Login
                           </Link>
                         </li>
                         <li>
-                          <Link     href="/signup" className="signUp-action">
+                          <Link href="/signup" className="signUp-action">
                             Sign Up
                           </Link>
                         </li>

@@ -85,7 +85,7 @@ const FooterSeven = () => {
         <div className="newsletter">
           <h5 className="title">Newsletter</h5>
           <p>
-            Join over <span>68,000</span> people getting our emails
+            Join over <span>100</span> people getting our emails
           </p>
 
           <FormFooterSignup />

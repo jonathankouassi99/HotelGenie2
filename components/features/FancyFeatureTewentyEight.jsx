@@ -3,7 +3,7 @@ import Image from "next/image";
 const featuresContent = [
   {
     icon: "149",
-    title: "Its A Must",
+    title: "It's A Must",
     desc: `Enhances guest experience, quickens response time, and boosts staff productivity.`,
     delayAnimation: "",
   },

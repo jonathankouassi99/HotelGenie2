@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 
@@ -14,9 +14,9 @@ const CopyRightTwo = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            ib-themes
+            HotelGenie
           </a>{" "}
-          inc.
+          Ltd.
         </p>
       </div>
     </div>

@@ -3,21 +3,20 @@ import Image from "next/image";
 const featuresContent = [
   {
     icon: "171",
-    title: "Daily Updates",
-    desc: `Elit esse cillum dolore eu fugiat nulla pariatur lorem elit`,
+    title: "Easy Setup",
+    desc: `Quick and straightforward setup process.`,
     delayAnimation: "",
   },
   {
     icon: "172",
-    title: "Easu Cutomization",
-    desc: ` Nulla vitae elit libero, a pharetra augue. Donec id elit non mi
-      porta.`,
+    title: "Customizable Settings",
+    desc: ` Customize the level of automation to suit your hotel's needs.`,
     delayAnimation: "100",
   },
   {
     icon: "173",
     title: "Fast Support",
-    desc: `Elit esse cillum dolore eu fugiat nulla pariatur lorem elit`,
+    desc: `Comprehensive support and guidance provided to ensure smooth integration.`,
     delayAnimation: "200",
   },
 ];
@@ -34,7 +33,13 @@ const FancyFeatureThirtyThree = () => {
         >
           <div className="block-style-thirtyThree pe-lg-5 mt-40">
             <div className="icon">
-              <Image width={40} height={40} style={{objectFit:'contain'}}     src={`/images/icon/${val.icon}.svg`} alt="icon" />
+              <Image
+                width={40}
+                height={40}
+                style={{ objectFit: "contain" }}
+                src={`/images/icon/${val.icon}.svg`}
+                alt="icon"
+              />
             </div>
             <h3 className="title">
               <span>{val.title}</span>

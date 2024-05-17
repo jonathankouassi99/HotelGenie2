@@ -17,8 +17,8 @@ const Scrollspy = dynamic(() => import("@/components/scrollpy/Scrollphy"), {
   ssr: false,
 });
 export const metadata = {
-  title: "Website Builder Landing || Deski-Saas & Software Nextjs Template",
-  description: `Unleash the full potential of your software projects with our SaaS-focused Next.js template. Create engaging blogs, showcase your talented team, set up an online shop, provide helpful FAQs, and offer exceptional services with our feature-rich solution. Elevate your SaaS and software development with ease and drive growth. Try it now and take your projects to new heights.`,
+  title: "HotelGenie || Automate Your Hotel Today",
+  description: `Automate Your Hotel Today`,
 };
 
 const WebsiteBuilderLanding = () => {
@@ -35,7 +35,7 @@ const WebsiteBuilderLanding = () => {
       <Scrollspy>
         <HeroBannerTwelve />
         <div className="upper-title title-style-thirteen text-center mt-10 md-mb-90">
-          Trusted by Many...
+          Trusted by many leaders in hospitality...
         </div>
         <div class="tech-slideshow">
           <div class="mover-1"></div>

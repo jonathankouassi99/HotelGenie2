@@ -10,8 +10,8 @@ const CallToActionSeven = () => {
           <div className="col-12" data-aos="fade-up" data-aos-duration="1200">
             <div className="title-style-thirteen">
               <h2>
-                200+ Customers <br />
-                have our AI Solutions.Try it now!
+                Hotels love our AI solutions. <br />
+                Try it now!
               </h2>
             </div>
             <p>Try it risk free — we don’t charge cancellation fees.</p>

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -27,8 +27,13 @@ const FooterTwo = () => {
         data-aos="fade-up"
         data-aos-duration="1200"
       >
-        <Link     href="/" className="logo">
-          <Image width="46" height="46"  src="/images/logo/deski_03.svg" alt="brand" />
+        <Link href="/" className="logo">
+          <Image
+            width="46"
+            height="46"
+            src="/images/logo/deski_03.svg"
+            alt="brand"
+          />
         </Link>
       </div>
       {/* /.about-widget */}
@@ -41,25 +46,25 @@ const FooterTwo = () => {
         <h5 className="footer-title">Products</h5>
         <ul>
           <li>
-            <Link     href="/about-cs">Take the tour</Link>
+            <Link href="/about-cs">Take the tour</Link>
           </li>
           <li>
-            <Link     href="/">Live chat</Link>
+            <Link href="/">Live chat</Link>
           </li>
           <li>
-            <Link     href="/solution-management">Self-service</Link>
+            <Link href="/solution-management">Self-service</Link>
           </li>
           <li>
-            <Link     href="/blogs/1">Social</Link>
+            <Link href="/blogs/1">Social</Link>
           </li>
           <li>
-            <Link     href="/blogs/1">Mobile</Link>
+            <Link href="/blogs/1">Mobile</Link>
           </li>
           <li>
-            <Link     href="/blogs/1">Collaboration</Link>
+            <Link href="/blogs/1">Collaboration</Link>
           </li>
           <li>
-            <Link     href="/blogs/1">deski Reviews</Link>
+            <Link href="/blogs/1">deski Reviews</Link>
           </li>
         </ul>
       </div>
@@ -73,19 +78,19 @@ const FooterTwo = () => {
         <h5 className="footer-title">Services</h5>
         <ul>
           <li>
-            <Link     href="/blogs/1">Web Design</Link>
+            <Link href="/blogs/1">Web Design</Link>
           </li>
           <li>
-            <Link     href="/blogs/1">Development</Link>
+            <Link href="/blogs/1">Development</Link>
           </li>
           <li>
-            <Link     href="/blogs/1">Wordpress</Link>
+            <Link href="/blogs/1">Wordpress</Link>
           </li>
           <li>
-            <Link     href="/blogs/1">Online Marketing</Link>
+            <Link href="/blogs/1">Online Marketing</Link>
           </li>
           <li>
-            <Link     href="/blogs/1">Content</Link>
+            <Link href="/blogs/1">Content</Link>
           </li>
         </ul>
       </div>
@@ -99,19 +104,19 @@ const FooterTwo = () => {
         <h5 className="footer-title">About us</h5>
         <ul>
           <li>
-            <Link     href="/about-cs">About us</Link>
+            <Link href="/about-cs">About us</Link>
           </li>
           <li>
-            <Link     href="/faqs/3">Faq Details</Link>
+            <Link href="/faqs/3">Faq Details</Link>
           </li>
           <li>
-            <Link     href="/team-6">Team</Link>
+            <Link href="/team-6">Team</Link>
           </li>
           <li>
-            <Link     href="/pricing-cs">Plan & Pricing</Link>
+            <Link href="/pricing-cs">Plan & Pricing</Link>
           </li>
           <li>
-            <Link     href="/blog-v5">News</Link>
+            <Link href="/blog-v5">News</Link>
           </li>
         </ul>
       </div>
@@ -125,11 +130,11 @@ const FooterTwo = () => {
         <h5 className="footer-title">Address</h5>
         <ul className="info">
           <li>
-            <a href="mailto:ib-themes21@gmail.com">deskisupportinc@gmail.com</a>
+            <a href="mailto:ib-themes21@gmail.com">contact@hotelgenie.co.uk</a>
           </li>
           <li>
             <a href="Tel: 7614123224" className="mobile-num">
-              +761 412 3224
+              +447519076844
             </a>
           </li>
         </ul>

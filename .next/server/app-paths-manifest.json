@@ -1,4 +1,7 @@
 {
-  "/(homes)/website-builder/page": "app/(homes)/website-builder/page.js",
-  "/(others)/signup/page": "app/(others)/signup/page.js"
+  "/(services)/outlookai/page": "app/(services)/outlookai/page.js",
+  "/(services)/services/[id]/page": "app/(services)/services/[id]/page.js",
+  "/(others)/signup/page": "app/(others)/signup/page.js",
+  "/(teams)/team-6/page": "app/(teams)/team-6/page.js",
+  "/(homes)/website/page": "app/(homes)/website/page.js"
 }

@@ -1,15 +1,10 @@
-'use client'
+"use client";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "../components/ScrollToTop";
-import Context from '@/context/Context';
-import { useEffect } from 'react'
-import '../public/main.scss'
-
-
-
-
-
+import Context from "@/context/Context";
+import { useEffect } from "react";
+import "../public/main.scss";
 
 export default function RootLayout({ children }) {
   useEffect(() => {
@@ -18,13 +13,27 @@ export default function RootLayout({ children }) {
       once: true,
     });
   }, []);
+
   return (
-    <html  lang="en">
+    <html lang="en">
       <head>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500&display=swap"/>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500&display=swap"
+        />
+        <link rel="icon" href="/favicon.ico" />
+        <title>HotelGenie | Automate Your Hotel Today!</title>
+        <meta
+          name="HotelGenie"
+          content="Unleash the full potential of your hotel with over 100 automated solutions."
+        />
       </head>
-      <body  ><div ><Context> {children}</Context></div>
-      {<ScrollToTop/>}</body>
+      <body>
+        <div>
+          <Context>{children}</Context>
+        </div>
+        <ScrollToTop />
+      </body>
     </html>
-  )
+  );
 }

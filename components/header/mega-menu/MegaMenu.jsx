@@ -1,6 +1,4 @@
-
-
-'use client'
+"use client";
 import Image from "next/image";
 import React, { useState } from "react";
 import Link from "next/link";
@@ -345,114 +343,182 @@ const Docs = [
 
 const MegaMenu = () => {
   const pathname = usePathname();
-  const [currentTopRoute, setCurrentTopRoute] = useState('Home')
+  const [currentTopRoute, setCurrentTopRoute] = useState("Home");
   return (
     <ul className="navbar-nav">
-      <li className={currentTopRoute == 'Home' ? "nav-item dropdown position-static active":"nav-item dropdown position-static" }  >
-        <a className="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+      <li
+        className={
+          currentTopRoute == "Home"
+            ? "nav-item dropdown position-static active"
+            : "nav-item dropdown position-static"
+        }
+      >
+        <a className="nav-link " href="/website">
           Home
         </a>
-        <div className="dropdown-menu">
-          <ul className="mega-menu d-flex " style={{maxHeight:'calc(100vh - 100px)',overflowY:'scroll'}} >
-            {HomeDropdown.map((val, i) => (
-              <li key={i}>
-                <Link     href={val.routerPath} className={val.clasName}>
-                  <Image width={990} height={890} style={{width:'100%',height:'fit-content'}}     src={`/images/menu/${val.img}.png`} alt="home-demo" />
-                  <span className={pathname == val.routerPath ? "font-rubik activeMenu" : 'font-rubik'}>{val.title}</span>
-                  <div className={val.inenerTextWrapClass}>
-                    <div className="font-rubik">{val.inenerText}</div>
-                  </div>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+
         {/* /.dropdown-menu */}
       </li>
       {/* End li */}
 
-      <li className={currentTopRoute == 'Pages' ? "nav-item active dropdown":"nav-item dropdown" }>
-        <a className={currentTopRoute == 'Pages' ? "nav-link dropdown-toggle active":"nav-link dropdown-toggle"} href="#" data-toggle="dropdown">
+      <li
+        className={
+          currentTopRoute == "Pages"
+            ? "nav-item active dropdown"
+            : "nav-item dropdown"
+        }
+      >
+        <a
+          className={
+            currentTopRoute == "Pages"
+              ? "nav-link dropdown-toggle active"
+              : "nav-link dropdown-toggle"
+          }
+          href="#"
+          data-toggle="dropdown"
+        >
           Pages
         </a>
         <ul className="dropdown-menu">
           <li className="dropdown-submenu dropdown">
             <a
               href="#"
-              className={ Pricing.filter((elm)=>elm.routerPath.split('/')[1] == pathname.split('/')[1])[0]? 'dropdown-item dropdown-toggle active':'dropdown-item dropdown-toggle'}
-              
+              className={
+                Pricing.filter(
+                  (elm) =>
+                    elm.routerPath.split("/")[1] == pathname.split("/")[1]
+                )[0]
+                  ? "dropdown-item dropdown-toggle active"
+                  : "dropdown-item dropdown-toggle"
+              }
               data-toggle="dropdown"
             >
               Pricing
             </a>
             <ul className="dropdown-menu">
               {Pricing.map((val, i) => (
-                <MenuLink topMenu={'Pages'}  val={val} key={i} setCurrentTopRoute={setCurrentTopRoute} />
+                <MenuLink
+                  topMenu={"Pages"}
+                  val={val}
+                  key={i}
+                  setCurrentTopRoute={setCurrentTopRoute}
+                />
               ))}
             </ul>
           </li>
           <li className="dropdown-submenu dropdown">
             <a
               href="#"
-              className={AboutUs.filter((elm)=>elm.routerPath.split('/')[1] == pathname.split('/')[1])[0]? 'dropdown-item dropdown-toggle active':'dropdown-item dropdown-toggle'}
-              
+              className={
+                AboutUs.filter(
+                  (elm) =>
+                    elm.routerPath.split("/")[1] == pathname.split("/")[1]
+                )[0]
+                  ? "dropdown-item dropdown-toggle active"
+                  : "dropdown-item dropdown-toggle"
+              }
               data-toggle="dropdown"
             >
               About Us
             </a>
             <ul className="dropdown-menu">
               {AboutUs.map((val, i) => (
-                <MenuLink topMenu={'Pages'}  val={val} key={i} setCurrentTopRoute={setCurrentTopRoute} />
+                <MenuLink
+                  topMenu={"Pages"}
+                  val={val}
+                  key={i}
+                  setCurrentTopRoute={setCurrentTopRoute}
+                />
               ))}
             </ul>
           </li>
           <li className="dropdown-submenu dropdown">
             <a
               href="#"
-              className={ContactUS.filter((elm)=>elm.routerPath.split('/')[1] == pathname.split('/')[1])[0]? 'dropdown-item dropdown-toggle active':'dropdown-item dropdown-toggle'}
-              
+              className={
+                ContactUS.filter(
+                  (elm) =>
+                    elm.routerPath.split("/")[1] == pathname.split("/")[1]
+                )[0]
+                  ? "dropdown-item dropdown-toggle active"
+                  : "dropdown-item dropdown-toggle"
+              }
               data-toggle="dropdown"
             >
               Contact Us
             </a>
             <ul className="dropdown-menu">
-              {ContactUS.map((val,i)=>
-            <MenuLink topMenu={'Pages'}  val={val} key={i} setCurrentTopRoute={setCurrentTopRoute} />)}
+              {ContactUS.map((val, i) => (
+                <MenuLink
+                  topMenu={"Pages"}
+                  val={val}
+                  key={i}
+                  setCurrentTopRoute={setCurrentTopRoute}
+                />
+              ))}
             </ul>
           </li>
           <li className="dropdown-submenu dropdown">
             <a
               href="#"
-              className={Team.filter((elm)=>elm.routerPath.split('/')[1] == pathname.split('/')[1])[0]? 'dropdown-item dropdown-toggle active':'dropdown-item dropdown-toggle'}
-              
+              className={
+                Team.filter(
+                  (elm) =>
+                    elm.routerPath.split("/")[1] == pathname.split("/")[1]
+                )[0]
+                  ? "dropdown-item dropdown-toggle active"
+                  : "dropdown-item dropdown-toggle"
+              }
               data-toggle="dropdown"
             >
               Team
             </a>
             <ul className="dropdown-menu">
               {Team.map((val, i) => (
-               <MenuLink topMenu={'Pages'}  val={val} key={i} setCurrentTopRoute={setCurrentTopRoute} />
+                <MenuLink
+                  topMenu={"Pages"}
+                  val={val}
+                  key={i}
+                  setCurrentTopRoute={setCurrentTopRoute}
+                />
               ))}
             </ul>
           </li>
           <li>
-          <MenuLinkTwo topMenu={'Pages'}  val={{ name: 'FAQ',
-    routerPath: '/faq'}} setCurrentTopRoute={setCurrentTopRoute} />
-
-         
+            <MenuLinkTwo
+              topMenu={"Pages"}
+              val={{ name: "FAQ", routerPath: "/faq" }}
+              setCurrentTopRoute={setCurrentTopRoute}
+            />
           </li>
           <li>
-          <MenuLinkTwo topMenu={'Pages'}  val={{ name: 'Faq Details',
-    routerPath: '/faqs/1'}} setCurrentTopRoute={setCurrentTopRoute} />
-       
+            <MenuLinkTwo
+              topMenu={"Pages"}
+              val={{ name: "Faq Details", routerPath: "/faqs/1" }}
+              setCurrentTopRoute={setCurrentTopRoute}
+            />
           </li>
         </ul>
         {/* /.dropdown-menu */}
       </li>
       {/* End li */}
 
-      <li className={currentTopRoute == 'Feature' ? "nav-item active dropdown":"nav-item dropdown" }>
-        <a className={currentTopRoute == 'Feature' ? "nav-link dropdown-toggle active":"nav-link dropdown-toggle"} href="#" data-toggle="dropdown">
+      <li
+        className={
+          currentTopRoute == "Feature"
+            ? "nav-item active dropdown"
+            : "nav-item dropdown"
+        }
+      >
+        <a
+          className={
+            currentTopRoute == "Feature"
+              ? "nav-link dropdown-toggle active"
+              : "nav-link dropdown-toggle"
+          }
+          href="#"
+          data-toggle="dropdown"
+        >
           Feature
         </a>
 
@@ -460,85 +526,177 @@ const MegaMenu = () => {
           <li className="dropdown-submenu dropdown">
             <a
               href="#"
-              className={Services.filter((elm)=>elm.routerPath.split('/')[1] == pathname.split('/')[1])[0]? 'dropdown-item dropdown-toggle active':'dropdown-item dropdown-toggle'}
-              
+              className={
+                Services.filter(
+                  (elm) =>
+                    elm.routerPath.split("/")[1] == pathname.split("/")[1]
+                )[0]
+                  ? "dropdown-item dropdown-toggle active"
+                  : "dropdown-item dropdown-toggle"
+              }
               data-toggle="dropdown"
             >
               Services
             </a>
             <ul className="dropdown-menu">
               {Services.map((val, i) => (
-                <MenuLink topMenu={'Feature'}  val={val} key={i} setCurrentTopRoute={setCurrentTopRoute} />
+                <MenuLink
+                  topMenu={"Feature"}
+                  val={val}
+                  key={i}
+                  setCurrentTopRoute={setCurrentTopRoute}
+                />
               ))}
             </ul>
           </li>
           <li className="dropdown-submenu dropdown">
             <a
               href="#"
-              className={Miscellaneous.filter((elm)=>elm.routerPath.split('/')[1] == pathname.split('/')[1])[0]? 'dropdown-item dropdown-toggle active':'dropdown-item dropdown-toggle'}
-              
+              className={
+                Miscellaneous.filter(
+                  (elm) =>
+                    elm.routerPath.split("/")[1] == pathname.split("/")[1]
+                )[0]
+                  ? "dropdown-item dropdown-toggle active"
+                  : "dropdown-item dropdown-toggle"
+              }
               data-toggle="dropdown"
             >
               Miscellaneous
             </a>
             <ul className="dropdown-menu">
               {Miscellaneous.map((val, i) => (
-                 <MenuLink topMenu={'Feature'}  val={val} key={i} setCurrentTopRoute={setCurrentTopRoute} />
+                <MenuLink
+                  topMenu={"Feature"}
+                  val={val}
+                  key={i}
+                  setCurrentTopRoute={setCurrentTopRoute}
+                />
               ))}
             </ul>
           </li>
           <li>
-          <MenuLinkTwo topMenu={'Feature'}  val={{ name: 'Our Solution',
-    routerPath: '/solution-management'}} setCurrentTopRoute={setCurrentTopRoute} />
-
+            <MenuLinkTwo
+              topMenu={"Feature"}
+              val={{ name: "Our Solution", routerPath: "/solution-management" }}
+              setCurrentTopRoute={setCurrentTopRoute}
+            />
           </li>
           <li>
-          <MenuLinkTwo topMenu={'Feature'}  val={{ name: 'Product Feature',
-    routerPath: '/product-customer-support'}} setCurrentTopRoute={setCurrentTopRoute} />
-         
+            <MenuLinkTwo
+              topMenu={"Feature"}
+              val={{
+                name: "Product Feature",
+                routerPath: "/product-customer-support",
+              }}
+              setCurrentTopRoute={setCurrentTopRoute}
+            />
           </li>
           <li>
-          <MenuLinkTwo topMenu={'Feature'}  val={{ name: 'Our Features',
-    routerPath: '/features-customer-support'}} setCurrentTopRoute={setCurrentTopRoute} />
-      
+            <MenuLinkTwo
+              topMenu={"Feature"}
+              val={{
+                name: "Our Features",
+                routerPath: "/features-customer-support",
+              }}
+              setCurrentTopRoute={setCurrentTopRoute}
+            />
           </li>
         </ul>
         {/* /.dropdown-menu */}
       </li>
       {/* End li */}
 
-      <li className={currentTopRoute == 'Portfolio' ? "nav-item active dropdown":"nav-item dropdown" }>
-        <a className={currentTopRoute == 'Portfolio' ? "nav-link dropdown-toggle active":"nav-link dropdown-toggle"} href="#" data-toggle="dropdown">
+      <li
+        className={
+          currentTopRoute == "Portfolio"
+            ? "nav-item active dropdown"
+            : "nav-item dropdown"
+        }
+      >
+        <a
+          className={
+            currentTopRoute == "Portfolio"
+              ? "nav-link dropdown-toggle active"
+              : "nav-link dropdown-toggle"
+          }
+          href="#"
+          data-toggle="dropdown"
+        >
           Portfolio
         </a>
         <ul className="dropdown-menu">
           {Portfolio.map((val, i) => (
-            <MenuLink topMenu={'Portfolio'}  val={val} key={i} setCurrentTopRoute={setCurrentTopRoute} />
+            <MenuLink
+              topMenu={"Portfolio"}
+              val={val}
+              key={i}
+              setCurrentTopRoute={setCurrentTopRoute}
+            />
           ))}
         </ul>
         {/* /.dropdown-menu */}
       </li>
       {/* End li */}
 
-      <li className={currentTopRoute == 'Blogs' ? "nav-item active dropdown":"nav-item dropdown" }>
-        <a className={currentTopRoute == 'Blogs' ? "nav-link dropdown-toggle active":"nav-link dropdown-toggle"} href="#" data-toggle="dropdown">
+      <li
+        className={
+          currentTopRoute == "Blogs"
+            ? "nav-item active dropdown"
+            : "nav-item dropdown"
+        }
+      >
+        <a
+          className={
+            currentTopRoute == "Blogs"
+              ? "nav-link dropdown-toggle active"
+              : "nav-link dropdown-toggle"
+          }
+          href="#"
+          data-toggle="dropdown"
+        >
           Blogs
         </a>
         <ul className="dropdown-menu">
-          {Blogs.map((val,i)=>
-        <MenuLink topMenu={'Blogs'}  val={val} key={i} setCurrentTopRoute={setCurrentTopRoute} />)}
+          {Blogs.map((val, i) => (
+            <MenuLink
+              topMenu={"Blogs"}
+              val={val}
+              key={i}
+              setCurrentTopRoute={setCurrentTopRoute}
+            />
+          ))}
         </ul>
         {/* /.dropdown-menu */}
       </li>
       {/* End li */}
 
-      <li className={currentTopRoute == 'Docs' ? "nav-item active dropdown":"nav-item dropdown" }>
-        <a className={currentTopRoute == 'Docs' ? "nav-link dropdown-toggle active":"nav-link dropdown-toggle"} href="#" data-toggle="dropdown">
+      <li
+        className={
+          currentTopRoute == "Docs"
+            ? "nav-item active dropdown"
+            : "nav-item dropdown"
+        }
+      >
+        <a
+          className={
+            currentTopRoute == "Docs"
+              ? "nav-link dropdown-toggle active"
+              : "nav-link dropdown-toggle"
+          }
+          href="#"
+          data-toggle="dropdown"
+        >
           Docs
         </a>
         <ul className="dropdown-menu">
           {Docs.map((val, i) => (
-             <MenuLink topMenu={'Docs'}  val={val} key={i} setCurrentTopRoute={setCurrentTopRoute} />
+            <MenuLink
+              topMenu={"Docs"}
+              val={val}
+              key={i}
+              setCurrentTopRoute={setCurrentTopRoute}
+            />
           ))}
         </ul>
         {/* /.dropdown-menu */}

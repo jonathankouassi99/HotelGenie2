@@ -22,11 +22,17 @@ const ContactAddress = () => {
       <div className="col-lg-4 col-sm-6 d-lg-flex">
         <div className="address-info">
           <div className="icon d-flex align-items-end">
-            <Image width="60" height="76" src="/images/icon/44.svg" alt="icon" />
+            <Image
+              width="60"
+              height="76"
+              src="/images/icon/44.svg"
+              alt="icon"
+            />
           </div>
           <div className="title">Location</div>
           <p className="font-rubik">
-            Melbourne, R. Market <br /> 1201 VIC
+            London
+            <br /> United Kingdom
           </p>
         </div>{" "}
         {/* /.address-info  */}
@@ -36,12 +42,17 @@ const ContactAddress = () => {
       <div className="col-lg-4 col-sm-6 d-lg-flex">
         <div className="address-info">
           <div className="icon d-flex align-items-end">
-            <Image  width="75" height="68" src="/images/icon/45.svg" alt="icon" />
+            <Image
+              width="75"
+              height="68"
+              src="/images/icon/45.svg"
+              alt="icon"
+            />
           </div>
           <div className="title">Contact</div>
           <p className="font-rubik">
-            bawejkor@duwvude.gov <br />
-            (779) 564-1593
+            contact@hotelgenie.co.uk <br />
+            0751 9076 844
           </p>
         </div>{" "}
         {/* /.address-info  */}
@@ -51,7 +62,12 @@ const ContactAddress = () => {
       <div className="col-lg-4 col-sm-6 d-lg-flex">
         <div className="address-info">
           <div className="icon d-flex align-items-end">
-            <Image width="66" height="75" src="/images/icon/46.svg" alt="icon" />
+            <Image
+              width="66"
+              height="75"
+              src="/images/icon/46.svg"
+              alt="icon"
+            />
           </div>
           <div className="title">Social Media</div>
           <p className="font-rubik">Find on social media</p>

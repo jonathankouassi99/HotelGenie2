@@ -13,18 +13,14 @@ import FooterFour from "../components/footer/FooterFour";
 import CallToActionFive from "../components/call-to-action/CallToActionFive";
 import Image from "next/image";
 
-
 export const metadata = {
-  title: 'Event Organizer || Deski-Saas & Software Nextjs Template',
-  description: `Unleash the full potential of your software projects with our SaaS-focused Next.js template. Create engaging blogs, showcase your talented team, set up an online shop, provide helpful FAQs, and offer exceptional services with our feature-rich solution. Elevate your SaaS and software development with ease and drive growth. Try it now and take your projects to new heights.`,
-}
+  title: "HotelGenie",
+  description: `Automate your hotel today`,
+};
 
-export default function Home () {
+export default function Home() {
   return (
     <div className="main-page-wrapper p0">
-
-
-
       <Header />
       {/* End HeaderFour */}
 
@@ -44,43 +40,43 @@ export default function Home () {
 
       <div className="fancy-feature-nine">
         <Image
-        width={14}
-        height={19}
+          width={14}
+          height={19}
           src="/images/shape/107.svg"
           alt="shape"
           className="shapes shape-one"
         />
         <Image
-        width={20}
-        height={17}
+          width={20}
+          height={17}
           src="/images/shape/108.svg"
           alt="shape"
           className="shapes shape-two"
         />
         <Image
-        width={16}
-        height={24}
+          width={16}
+          height={24}
           src="/images/shape/109.svg"
           alt="shape"
           className="shapes shape-three"
         />
         <Image
-        width={16}
-        height={24}
+          width={16}
+          height={24}
           src="/images/shape/110.svg"
           alt="shape"
           className="shapes shape-four"
         />
         <Image
-        width={18}
-        height={22}
+          width={18}
+          height={22}
           src="/images/shape/111.svg"
           alt="shape"
           className="shapes shape-five"
         />
         <Image
-        width={23}
-        height={18}
+          width={23}
+          height={18}
           src="/images/shape/112.svg"
           alt="shape"
           className="shapes shape-six"
@@ -128,8 +124,16 @@ export default function Home () {
               data-aos-duration="1200"
             >
               <div className="illustration-holder d-flex justify-content-end md-mt-50">
-                <Image width={509} height={633} style={{height:'fit-content'}} src="/images/media/img_58.png" alt="media" />
-                <Image width={304} height={304}
+                <Image
+                  width={509}
+                  height={633}
+                  style={{ height: "fit-content" }}
+                  src="/images/media/img_58.png"
+                  alt="media"
+                />
+                <Image
+                  width={304}
+                  height={304}
                   src="/images/shape/113.svg"
                   alt="media"
                   className="shapes shape-one"
@@ -147,42 +151,44 @@ export default function Home () {
 				Pricing Section Three
 		============================================== */}
       <div className="pricing-section-three mt-250 mb-200 md-mt-150 md-mb-150">
-        <Image width={13}
-        height={18}
+        <Image
+          width={13}
+          height={18}
           src="/images/shape/107.svg"
           alt="shape"
           className="shapes shape-one"
         />
         <Image
-        width={20}
-        height={17}
+          width={20}
+          height={17}
           src="/images/shape/108.svg"
           alt="shape"
           className="shapes shape-two"
         />
         <Image
-        width={16}
-        height={24}
+          width={16}
+          height={24}
           src="/images/shape/109.svg"
           alt="shape"
           className="shapes shape-three"
         />
         <Image
-        width={26}
-        height={20}
+          width={26}
+          height={20}
           src="/images/shape/110.svg"
           alt="shape"
           className="shapes shape-four"
         />
         <Image
-        width={17}
-        height={21}
+          width={17}
+          height={21}
           src="/images/shape/111.svg"
           alt="shape"
           className="shapes shape-five"
         />
-        <Image width={22}
-        height={17}
+        <Image
+          width={22}
+          height={17}
           src="/images/shape/112.svg"
           alt="shape"
           className="shapes shape-six"
@@ -226,7 +232,13 @@ export default function Home () {
           <div className="row">
             <div className="col-xl-7 col-lg-9 m-auto">
               <div className="testimonial-slider-wrapper">
-                <Image width={75} height={54} src="/images/icon/65.svg" alt="icon" className="m-auto" />
+                <Image
+                  width={75}
+                  height={54}
+                  src="/images/icon/65.svg"
+                  alt="icon"
+                  className="m-auto"
+                />
                 <div className="clientSliderThree">
                   <TestimonialThree />
                 </div>
@@ -237,32 +249,43 @@ export default function Home () {
         </div>
         {/* /.container */}
         <Image
-        width={82} height={82}
+          width={82}
+          height={82}
           src="/images/media/img_59.png"
           alt="media"
           className="shapes shape_1"
         />
-        <Image width={46} height={46}
+        <Image
+          width={46}
+          height={46}
           src="/images/media/img_60.png"
           alt="media"
           className="shapes shape_2"
         />
-        <Image width={87} height={87}
+        <Image
+          width={87}
+          height={87}
           src="/images/media/img_61.png"
           alt="media"
           className="shapes shape_3"
         />
-        <Image width={46} height={46}
+        <Image
+          width={46}
+          height={46}
           src="/images/media/img_62.png"
           alt="media"
           className="shapes shape_4"
         />
-        <Image width={111} height={111}
+        <Image
+          width={111}
+          height={111}
           src="/images/media/img_63.png"
           alt="media"
           className="shapes shape_5"
         />
-        <Image width={57} height={57}
+        <Image
+          width={57}
+          height={57}
           src="/images/media/img_64.png"
           alt="media"
           className="shapes shape_6"
@@ -271,12 +294,16 @@ export default function Home () {
       {/* /.client-feedback-slider-three */}
 
       <div className="faq-section-four">
-        <Image width={182} height={397}
+        <Image
+          width={182}
+          height={397}
           src="/images/shape/120.svg"
           alt="shape"
           className="shapes shape-one"
         />
-        <Image width={176} height={433}
+        <Image
+          width={176}
+          height={433}
           src="/images/shape/121.svg"
           alt="shape"
           className="shapes shape-two"
@@ -300,7 +327,7 @@ export default function Home () {
             data-aos-duration="1200"
           >
             <h3 className="font-rubik pb-30">Don’t find your answer?</h3>
-            <Link className="theme-btn-five"     href="/contact-eo">
+            <Link className="theme-btn-five" href="/contact-eo">
               Contact us
             </Link>
           </div>
@@ -352,6 +379,4 @@ export default function Home () {
       {/* /.theme-footer-four */}
     </div>
   );
-};
-
-
+}

@@ -68,7 +68,7 @@ const PricingMonthly = () => {
                 <li key={i}>{list}</li>
               ))}
             </ul>
-            <a href="#" className="theme-btn-four">
+            <a href="/signup" className="theme-btn-four">
               Choose Plan
             </a>
             <div className="trial-text font-rubik">

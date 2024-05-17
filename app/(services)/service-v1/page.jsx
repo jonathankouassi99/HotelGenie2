@@ -10,13 +10,12 @@ import CallToActionThree from "../../../components/call-to-action/CallToActionTh
 import FancyFeatureThirtyThree from "../../../components/features/FancyFeatureThirtyThree";
 import Image from "next/image";
 export const metadata = {
-    title: 'Service Version 1 || Deski-Saas & Software Nextjs Template',
-    description: `Unleash the full potential of your software projects with our SaaS-focused Next.js template. Create engaging blogs, showcase your talented team, set up an online shop, provide helpful FAQs, and offer exceptional services with our feature-rich solution. Elevate your SaaS and software development with ease and drive growth. Try it now and take your projects to new heights.`,
-  } 
+  title: "Service Version 1 || Deski-Saas & Software Nextjs Template",
+  description: `Unleash the full potential of your software projects with our SaaS-focused Next.js template. Create engaging blogs, showcase your talented team, set up an online shop, provide helpful FAQs, and offer exceptional services with our feature-rich solution. Elevate your SaaS and software development with ease and drive growth. Try it now and take your projects to new heights.`,
+};
 const ServiceV1 = () => {
   return (
     <div className="main-page-wrapper p0">
-   
       {/* End Page SEO Content */}
 
       <HeaderTwo />
@@ -36,10 +35,13 @@ const ServiceV1 = () => {
           <div className="container">
             <div className="row">
               <div className="col-xl-9 col-lg-10 m-auto">
-                <h1 className="heading">Our Services</h1>
+                <h1 className="heading">Outlook AI</h1>
                 <p className="sub-heading">
-                  deski helps teams of all sizes get better at delivering
-                  effortless customer
+                  Outlook AI is an advanced email management tool designed to
+                  enhance your hotel's communication efficiency. It automates
+                  responses to incoming emails from guests, ensuring timely and
+                  accurate communication while freeing up your staff to focus on
+                  providing excellent in-person service.
                 </p>
               </div>
             </div>
@@ -75,7 +77,9 @@ const ServiceV1 = () => {
           <div className="shapes shape-three"></div>
           <div className="shapes shape-four"></div>
           <div className="shapes shape-five"></div>
-          <Image width={235} height={235}
+          <Image
+            width={235}
+            height={235}
             src="/images/shape/51.svg"
             alt="shape"
             className="shapes shape-six"
@@ -85,7 +89,12 @@ const ServiceV1 = () => {
               <h2>
                 <span>
                   Explore Services
-                  <Image width={375} height={44} src="/images/shape/line-shape-2.svg" alt="shape" />
+                  <Image
+                    width={375}
+                    height={44}
+                    src="/images/shape/line-shape-2.svg"
+                    alt="shape"
+                  />
                 </span>
               </h2>
               <div className="sub-text mt-15">
@@ -117,7 +126,12 @@ const ServiceV1 = () => {
                   <h2>
                     <span>
                       Why your should
-                      <Image width="530" height="54" src="/images/shape/line-shape-6.svg" alt="image" />
+                      <Image
+                        width="530"
+                        height="54"
+                        src="/images/shape/line-shape-6.svg"
+                        alt="image"
+                      />
                     </span>
                     choose deski.
                   </h2>
@@ -143,13 +157,23 @@ const ServiceV1 = () => {
               data-aos-duration="1200"
             >
               <div className="img-gallery">
-                <Image width={402} height={430} style={{height:'fit-content'}}     src="/images/media/img_37.png" alt="image" />
-                <Image width={121} height={145}
+                <Image
+                  width={402}
+                  height={430}
+                  style={{ height: "fit-content" }}
+                  src="/images/media/img_37.png"
+                  alt="image"
+                />
+                <Image
+                  width={121}
+                  height={145}
                   src="/images/shape/53.svg"
                   alt="shape"
                   className="shapes shape-one"
                 />
-                <Image width={144} height={144}
+                <Image
+                  width={144}
+                  height={144}
                   src="/images/shape/52.svg"
                   alt="shape"
                   className="shapes shape-two"

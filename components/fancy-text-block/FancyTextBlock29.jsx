@@ -97,7 +97,7 @@ const FancyTextBlock29 = () => {
                   optimal engagement.
                 </li>
               </ul>
-              <a href="#" className="theme-btn-thirteen mt-30">
+              <a href="/outlookai" className="theme-btn-thirteen mt-30">
                 Learn More
               </a>
             </div>

@@ -1,10 +1,9 @@
 {
   "pages": {
-    "/(homes)/website-builder/page": [
+    "/(services)/service-v1/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(homes)/website-builder/page.css",
-      "static/chunks/app/(homes)/website-builder/page.js"
+      "static/chunks/app/(services)/service-v1/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -17,10 +16,84 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
+    "/(portfolio)/classic-style/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(portfolio)/classic-style/page.js"
+    ],
+    "/(others)/terms-conditions/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(others)/terms-conditions/page.js"
+    ],
+    "/(services)/service-v2/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(services)/service-v2/page.js"
+    ],
+    "/(services)/service-v3/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(services)/service-v3/page.css",
+      "static/chunks/app/(services)/service-v3/page.js"
+    ],
+    "/(services)/service-v4/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(services)/service-v4/page.js"
+    ],
+    "/(services)/services/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(services)/services/[id]/page.js"
+    ],
+    "/(pricing)/pricing-cs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pricing)/pricing-cs/page.js"
+    ],
+    "/(portfolio)/gallery-slider/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(portfolio)/gallery-slider/page.css",
+      "static/chunks/app/(portfolio)/gallery-slider/page.js"
+    ],
+    "/(blogs)/blog-v1/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(blogs)/blog-v1/page.js"
+    ],
+    "/(others)/solution-management/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(others)/solution-management/page.js"
+    ],
+    "/(contact)/contact-pm/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(contact)/contact-pm/page.js"
+    ],
     "/(others)/signup/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(others)/signup/page.js"
+    ],
+    "/(services)/outlookai/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(services)/outlookai/page.js"
+    ],
+    "/(teams)/team-6/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(teams)/team-6/page.css",
+      "static/chunks/app/(teams)/team-6/page.js"
+    ],
+    "/(homes)/website/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(homes)/website/page.css",
+      "static/chunks/app/(homes)/website/page.js"
     ]
   }
 }

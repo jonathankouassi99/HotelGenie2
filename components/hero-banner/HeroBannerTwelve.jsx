@@ -19,7 +19,7 @@ const HeroBannerTwelve = () => {
               data-aos-delay="100"
             >
               Hotels typically save £5000 per month when automating their work
-              with HotelGenie!.
+              with HotelGenie!
             </p>
             <div data-aos="fade-up" data-aos-delay="200">
               <Link href="/signup" className="get-start-btn">
@@ -30,7 +30,17 @@ const HeroBannerTwelve = () => {
           </div>
         </div>
 
-        <div className="screen-holder" data-aos="fade-up">
+        <div
+          className="screen-holder"
+          data-aos="fade-up"
+          style={{
+            position: "relative",
+            paddingBottom: "56.25%",
+            height: "0",
+            overflow: "hidden",
+            maxWidth: "100%",
+          }}
+        >
           <iframe
             width="1240"
             height="698"
@@ -40,6 +50,14 @@ const HeroBannerTwelve = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
+            style={{
+              position: "absolute",
+              top: "0",
+              left: "0",
+              width: "100%",
+              height: "100%",
+              border: "0",
+            }}
           ></iframe>
           <Image
             width="311"
